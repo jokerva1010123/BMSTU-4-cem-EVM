@@ -1,0 +1,32 @@
+<%- include("includes/header.ejs") %>
+    <link rel="stylesheet" href="/style.css">
+    <title>Stock <%= stock.name %></title>
+</head>
+<body>
+    <%- include("includes/navbar.ejs", { page: "car" }) %>
+    <% if (error) { %>
+        <div class="err-card">
+            <h1><%=error%></h1>
+        </div>
+    <% } else { %>
+        <div class="simple-card">
+            <h1>Found stock <span class="inv"><%=stock.name%></span>!</h1>
+
+            <% if (stock.cars.length) { %>
+                <h1>Cars:</h1>
+
+                <% for (const car of stock.cars) { %>
+                    <div class="simple-card">
+                        <p class="bp">Name: <%=car%></p>
+                    </div>
+                <% } %>
+
+            <% } else { %>
+                <div class="err-card">
+                    <h1>No cars in stock!</h1>
+                </div>
+            <% } %>
+        </div>
+    <% } %>
+
+<%- include("includes/end.ejs") %>

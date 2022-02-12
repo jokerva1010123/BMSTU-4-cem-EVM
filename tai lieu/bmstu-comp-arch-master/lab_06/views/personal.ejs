@@ -1,0 +1,42 @@
+<%- include("includes/header.ejs") %>
+    <link rel="stylesheet" href="/style.css">
+    <title>Personal</title>
+</head>
+<body>
+    <%- include("includes/navbar.ejs", { page: "personal" }) %>
+    <% if (error) {%>
+        <div class="err-card">
+            <h1><%=error%></h1>
+        </div>
+    <%}%>
+
+    <% if (isAuth) {%>
+        <div class="simple-card">
+            <h1>User</h1>
+            <p class="bp">Login: <%= user.login %></p>
+            <p class="bp">Password: <%= user.password %></p>
+            <p class="bp">Hobby: <%= user.hobby %></p>
+            <p class="bp">Age: <%= user.age %></p>
+        </div>
+
+        <a class="ba exit-a" href="/exit">Exit</a>
+
+    <%} else {%>
+
+        <div class="simple-card">
+            <form METHOD="POST" action="/login">
+                <label for="login"></label>
+                <input type="text" name="login" spellcheck="false" autocomplete="off">
+                <br>
+
+                <label for="password"></label>
+                <input type="password" name="password" spellcheck="false" autocomplete="off">
+                <br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    <%}%>
+
+<%- include("includes/end.ejs") %>

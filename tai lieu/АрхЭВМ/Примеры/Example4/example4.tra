@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'example4.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"lpc2400.o"'
+### List of Objects: adding '"main.o"'
+### ADS-LD Command completed:
+--device DARMP "lpc2400.o" "main.o" --strict --scatter "example4.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\example4.map" -o "example4.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'example4.axf'
+### ADS-LD Command File: 'example4.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'example4.lnp', Handle=0x00000208
+### Writing '.lnp' file
+### ADS-LD Command file 'example4.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+D:\My eBooks\BMSTU\2010-2011\Архитектура ЭВМ\Диск\Примеры\Example1\example1.uv2
+Project File Date:  08/11/2009
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling Main.c...
+assembling Startup.s...
+linking...
+Program Size: Code=972 RO-data=16 RW-data=0 ZI-data=1384  
+"example1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Main.c...
+assembling Startup.s...
+linking...
+Program Size: Code=972 RO-data=16 RW-data=0 ZI-data=1384  
+"example1.axf" - 0 Error(s), 0 Warning(s).

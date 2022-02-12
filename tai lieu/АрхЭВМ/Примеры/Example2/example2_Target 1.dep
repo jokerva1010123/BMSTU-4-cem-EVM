@@ -1,0 +1,4 @@
+Dependencies for Project 'example2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\LPC2400.s)(0x4A82E0AC)(--device DARMP --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "LPC2400.lst" --xref -o "LPC2400.o")
+F (.\MAIN.C)(0x4C7E9384)(-c --device DARMP -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "main.o" --omf_browse "main.crf" --depend "main.d")
+I (C:\Keil\ARM\INC\Philips\LPC24xx.H)(0x4A02BB4E)

@@ -1,0 +1,16 @@
+<%- include("includes/header.ejs") %>
+    <link rel="stylesheet" href="/style.css">
+    <title>Search car</title>
+</head>
+<body>
+    <%- include("includes/navbar.ejs", { page: "cinfo" }) %>
+    <div class="simple-card">
+        <h1>Here you can find any car I have!</h1>
+        <form method="GET" action="/car">
+            <input type="text" name="name" placeholder="Enter name...">
+            <br>
+            <button type="submit">Find</button>
+        </form>
+    </div>
+
+<%- include("includes/end.ejs") %>
